@@ -1,0 +1,35 @@
+Network architecture:
+
+-----------------------------------------------------------------------
+EXPERIMENTAL PARAMETER:
+-----------------------------------------------------------------------
+
+Network initialization: Random Uniform, Uniform
+
+
+-----------------------------------------------------------------------
+CONSTANT PARAMETERS:
+-----------------------------------------------------------------------
+MLP layer activation: Softmax
+Convolutional layers: 3
+Dense layers = 1
+alpha = 0.4
+no_of_classes = 3
+no_of_conv_filters = 256
+filter_size = 5
+pool_size = 3
+hidden_units_mlp = 64
+loss function = categorical cross_entropy
+activation = RELU
+optimzer = Adam
+metrics = ['accuracy', 'mse']
+batch_size = 10
+epochs = 5
+
+
+-----------------------------------------------------------------------
+OBSERVATIONS:
+-----------------------------------------------------------------------
+
+No significant improvement in observations again. Both network 
+initialization give 33.33% accuracy. 

@@ -1,0 +1,36 @@
+Network architecture:
+
+-----------------------------------------------------------------------
+EXPERIMENTAL PARAMETER:
+-----------------------------------------------------------------------
+
+Epochs: [3, 5, 7, 10, 15]
+
+
+-----------------------------------------------------------------------
+CONSTANT PARAMETERS:
+-----------------------------------------------------------------------
+MLP layer activation: Softmax
+Convolutional layers: 3
+Dense layers : 1
+alpha : 0.4
+no_of_classes : 3
+no_of_conv_filters : [64, 256, 128]
+filter_size : [3, 5, 3]
+pool_size : [3, 5, 3]
+hidden_units_mlp : 64
+kernel / weight initializer : random uniform
+activation : RELU
+optimzer : Adam
+metrics : ['accuracy', 'mse']
+batch_size : 10
+loss function : categorical cross_entropy
+
+-----------------------------------------------------------------------
+OBSERVATIONS:
+-----------------------------------------------------------------------
+
+The network gives a constant accuracy irrespective of the epochs. However,
+the nature of the other plots change, the validation curves and the training
+curves are very abrupt. 
+

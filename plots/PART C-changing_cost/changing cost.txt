@@ -1,0 +1,37 @@
+Network architecture:
+
+-----------------------------------------------------------------------
+EXPERIMENTAL PARAMETER:
+-----------------------------------------------------------------------
+
+Loss Function: Categorical cross-entropy, Kullback Leibler
+
+
+-----------------------------------------------------------------------
+CONSTANT PARAMETERS:
+-----------------------------------------------------------------------
+MLP layer activation: Softmax
+Convolutional layers: 3
+Dense layers = 1
+alpha = 0.4
+no_of_classes = 3
+no_of_conv_filters = 256
+filter_size = 5
+pool_size = 3
+hidden_units_mlp = 64
+kernel / weight initializer = random normal
+activation = RELU
+optimzer = Adam
+metrics = ['accuracy', 'mse']
+batch_size = 10
+epochs = 5
+
+
+-----------------------------------------------------------------------
+OBSERVATIONS:
+-----------------------------------------------------------------------
+
+No significant improvement in observations again. Both loss functions 
+give 33.33% accuracy. Since all other parameters were kept constant
+and only the loss function was changed we anyways weren't expecting any
+major change in accuracy or improvement. 

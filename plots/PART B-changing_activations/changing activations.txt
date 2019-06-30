@@ -1,0 +1,34 @@
+Network architecture:
+
+-------------------------------------------
+EXPERIMENTAL PARAMETER:
+-------------------------------------------
+
+Activation: RELU, TANH
+
+
+-------------------------------------------
+CONSTANT PARAMETERS:
+-------------------------------------------
+MLP layer activation: Softmax
+Convolutional layers: 3
+Dense layers = 1
+alpha = 0.4
+no_of_classes = 3
+no_of_conv_filters = 512
+filter_size = 5
+pool_size = 3
+kernel / weight initializer = random normal
+loss = categorical cross entropy
+optimzer = Adam
+metrics = ['accuracy', 'mse']
+batch_size = 10
+epochs = 5
+
+
+-------------------------------------------
+OBSERVATIONS:
+-------------------------------------------
+
+The RELU or TANH does not provide any significant increase in accuracy;
+using both I am achieving a maximum of 33.33% on test data of leaves.
